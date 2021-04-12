@@ -73,7 +73,7 @@ public class Server {
                         RETR(outStream, argument);
                         break;
                     default:
-                        outStream.writeInt(1);
+                        outStream.writeInt(0);
                         outStream.writeUTF("ERROR: Invalid command");
                         break;
                 }
@@ -149,6 +149,10 @@ public class Server {
         outStream.writeInt(3);
         //send file name to client
         outStream.writeUTF(argument);
+
+        if(inStream.readByte() == 0){
+            return;
+        }
 
         FileOutputStream fileStream = new FileOutputStream(argument);
         //get file size from client

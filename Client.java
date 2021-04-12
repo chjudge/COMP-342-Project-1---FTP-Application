@@ -116,8 +116,10 @@ public class Client {
         FileInputStream fileStream;
         try {
             fileStream = new FileInputStream(file);
+            outStream.writeByte(1);
         } catch (FileNotFoundException e) {
             System.out.println("ERROR: Invalid File Name");
+            outStream.writeByte(0);
             return;
         }
 
