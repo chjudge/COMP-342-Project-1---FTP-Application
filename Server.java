@@ -1,4 +1,4 @@
-/** Author:  Clayton Judge
+/** Author:  Clayton Judge & Melva Loock
   * Course:  COMP 342 Data Communications and Networking
   * Date:    23 March 2021
   * Description: Server side of an FTP application

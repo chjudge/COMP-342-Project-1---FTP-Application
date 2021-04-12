@@ -1,8 +1,10 @@
-/** Author:  Clayton Judge
+/** Author:  Clayton Judge & Melva Loock
   * Course:  COMP 342 Data Communications and Networking
   * Date:    23 March 2021
-  * Description: Cient side of an FTP application
+  * Description: Client side of an FTP application
 */
+
+//Server class must be run first (simultaneously)
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
